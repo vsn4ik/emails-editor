@@ -1,0 +1,5 @@
+{
+    "testMatch": ["<rootDir>/tests/*.spec.js"],
+    "setupFilesAfterEnv": ["<rootDir>/env/jest-setup.js"],
+    "modulePathIgnorePatterns": ["<rootDir>/tests/dist/"]
+}

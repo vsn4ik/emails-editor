@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <script src="../dist/emails-editor.umd.js"></script>
+    </head>
+
+    <body>
+        <div id="emails-editor"></div>
+
+        <script>
+            const container = document.querySelector('#emails-editor');
+            const editor = new EmailsEditor({ container });
+
+            editor.setEmailsList(['valid-email@domain.com', 'invalid-email']);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="description" content="Emails Editor">
+        <meta name="keywords" content="emails-editor">
+        <meta name="author" content="Vasilii Artemchuk">
+        <meta name="robots" content="none">
+        <meta name="google" content="notranslate">
+
+        <!-- NOTE: Меняем цвета стандартных элементов в зависимости от цветовой схемы. -->
+        <!-- См. select в Safari -->
+        <meta name="color-scheme" content="light dark">
+
+        <title>EmailsEditor</title>
+
+        <!-- NOTE: Chrome for Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!-- NOTE: iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    </head>
+
+    <body>
+        <div id="emails-editor"></div>
+
+        <script type="module">
+            import EmailsEditor from './dist/emails-editor.es.js';
+
+            const container = document.querySelector('#emails-editor');
+
+            new EmailsEditor({ container });
+        </script>
+    </body>
+</html>
