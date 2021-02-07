@@ -1,5 +1,5 @@
 import postcss from 'rollup-plugin-postcss';
-import babel from 'rollup-plugin-babel';
+import { babel } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import url from 'postcss-url';
 
@@ -30,7 +30,7 @@ export default {
         }),
         babel({
             exclude: 'node_modules/**',
-            runtimeHelpers: true
+            babelHelpers: 'bundled'
         })
     ]
 }

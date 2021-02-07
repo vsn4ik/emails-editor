@@ -19,23 +19,23 @@
         "build:dev": "cp -rf ./dist ./tests/html/",
         "watch": "rollup --config --watch",
         "serve": "serve --listen 5000 --no-clipboard ./tests/html/",
-        "docs:screenshots": "node --harmony-top-level-await ./docs/screenshots.js",
+        "docs:screenshots": "node ./docs/screenshots.js",
         "test": "jest"
     },
     "devDependencies": {
-        "@babel/cli": "^7.10.5",
-        "@babel/core": "^7.11.1",
-        "@babel/plugin-proposal-class-properties": "^7.10.4",
-        "@babel/runtime": "^7.11.2",
-        "@rollup/plugin-commonjs": "^14.0.0",
-        "@rollup/plugin-node-resolve": "^8.4.0",
-        "jest": "^26.3.0",
-        "jest-image-snapshot": "^4.1.0",
-        "postcss-url": "^8.0.0",
-        "puppeteer": "^5.2.1",
-        "rollup": "^2.23.1",
-        "rollup-plugin-babel": "^4.4.0",
-        "rollup-plugin-postcss": "^3.1.5",
-        "serve": "^11.3.2"
+        "@babel/cli": "7.12.13",
+        "@babel/core": "7.12.13",
+        "@babel/plugin-proposal-class-properties": "7.12.13",
+        "@babel/runtime": "7.12.13",
+        "@rollup/plugin-babel": "5.2.3",
+        "@rollup/plugin-commonjs": "17.1.0",
+        "@rollup/plugin-node-resolve": "11.1.1",
+        "jest": "26.6.3",
+        "jest-image-snapshot": "4.3.0",
+        "postcss-url": "10.1.1",
+        "puppeteer": "7.0.1",
+        "rollup": "2.38.5",
+        "rollup-plugin-postcss": "4.0.0",
+        "serve": "11.3.2"
     }
 }
